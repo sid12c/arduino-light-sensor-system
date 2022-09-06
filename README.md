@@ -1,6 +1,7 @@
 # Arduino Light Sensor System
 > Worker productivity is an assessment of the efficiency of a worker and is greatly impacted by the brightness of their working environment. Employers must balance the usage of lighting in a room to improve productivity while maintaining energy efficient practices to minimize costs. The main objective of this project is to create a sensor system which can detect when a room is actively being used and is dark enough to need additional lighting in order to conserve energy and ensure the workplace has a healthy amount of light. This system utilizes light dependent resistors to detect the ambient light levels of the room, PIR motion sensors to detect whether a room is being used, a microcontroller to process and handle the information from the sensors, and a bluetooth module to connect the system with a phone to control the lights manually. The system works well in the testing environment and is capable of accomplishing its purpose with minimal human interaction.
 <hr>
+
 # Table of Contents
 * [Problem Identification](#problem-identification)
 * [Sensors Selection](#sensors-selection)
@@ -11,6 +12,7 @@
 * [Personal Reflections](#pr)
 * [References](#ref)
 * [Appendix](#a)
+
 # <a name="problem-identification"></a>Problem Identification
 In homes and workplaces, lighting is often human driven, and requires human interaction to turn on and off. The first issue occurs when a room is lit by natural light, and as the sun sets the room becomes darker. When this happens, people already in the room will not notice exactly when it is no longer bright enough to achieve maximum productivity as they will be accustomed to the gradual change in lighting. An optimal light level for offices is 250 lux while an optimal level for the most detailed tasks is around 500 lux [2]. Thus the first step of this project is to design a sensor system which detects the level of light in a room ranging from 0 to 500 lux. The next issue occurs when the lights in a room are left on for an extended duration of time with no people in the room. This leads to an unnecessary increase in costs and is harmful to the environment [6]. The second step of this project is to use a sensor system which accurately detects whether a person is using a room or area. Finally a microcontroller must be used to process the information from the two sensor systems and decide the state of the room’s lighting.
 # <a name="sensors-selection"></a>Sensor Selection
